@@ -1,0 +1,1620 @@
+/* POLICES */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+display: flex;
+justify-content: baseline;
+flex-direction: row;
+}
+
+.titre
+{
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.imageMenu1 {
+
+    font-size: 1.5rem;
+
+  }
+  .imageMenu2 {
+    font-size: 1.5rem;
+
+  }
+
+ /*------------------------------------
+             RESPONSIVE 
+---------------------------------------*/
+ 
+ 
+@media all and (max-width: 1000px) {
+
+    header {
+        background: transparent;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+        font-size:1.5rem;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .open .menu {
+        transform: translateX(0);
+    }
+}
+
+/* ---------------------------------------------
+----------------- CORPS CONTAINER 1 --------------
+-----------------------------------------------*/
+
+.container1 {
+    height: 100vh;
+    background: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.container1-1 {
+    
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.blocTexte1-1
+{
+    width: 60%;
+    height:45%;
+}
+
+.titreC1-1
+{
+    font-size: 3rem;
+    color:white;
+}
+
+.presentationC1-1
+{
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color:white;
+}
+
+.blocBouton1-1 {
+  margin-top: 35px;
+  padding-left: 25px;
+}
+
+
+/* Boutons */
+
+.reserver {
+    background-color: White;
+    color: black;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+  }
+  .reserver:hover {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+  }
+  
+  .explorer {
+    width: 140px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    margin-left: 25px;
+  }
+  .explorer:hover {
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    margin-left: 25px;
+  }
+  
+
+  .blocReseau1-1
+  {
+      width: 5%;
+      height:20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+   
+  .imageFB {
+    font-size :3.5rem;
+    color: white;
+    }
+    
+    .imageInstagram {
+      margin-top:15px;
+      font-size :3.5rem;
+      color: white;
+    }
+
+.blocSwap1-1
+{
+    display: none;
+}
+
+
+
+
+
+/*RESPONSIVE */
+
+@media all and (max-width: 1200px) {
+
+.container1 {
+    height: 100vh;
+    background: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container1-1 {
+    
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.blocTexte1-1
+{
+    width: 60%;
+    height:65%;
+
+}
+
+.titreC1-1
+{
+    font-size: 2rem;
+    color:white;
+}
+
+.presentationC1-1
+{
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.blocBouton1-1 {
+  margin-top: 35px;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+/* BOUTON */
+
+  
+  .explorer {
+    background-color: White;
+    color: black;
+    width: 120px;
+    height: 40px;
+    margin-left: 0px;
+
+  }
+  .explorer:hover {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-left: 0px;
+
+  }
+
+  .reserver {
+    background-color: White;
+    color: black;
+    width: 120px;
+    height: 40px;
+    margin-left: 0px;
+
+  }
+  .reserver:hover {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-left: 0px;
+
+  }
+  
+  
+
+}
+
+
+@media all and (max-width: 600px) {
+
+
+    .logo
+    {
+        font-size: 2rem;
+    }
+    
+    .container1 {
+        height: 100vh;
+        background: url('images/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    .container1-1 {
+        
+        width:100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    .blocTexte1-1
+    {
+        margin-top:10%;
+        width: 80%;
+        height:50%;
+    }
+
+.presentationC1-1
+{
+    margin-top: 25px;
+    font-size: 1rem;
+    color:white;
+}
+
+    .responsiveC1-1
+    {
+        width: 98%;
+        height: 15%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        color:white;
+    }
+
+    .blocSwap1-1
+    {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .boutonSwap
+    {
+        font-size: 5rem;
+        margin-left:2%;
+        margin-right:2%;
+    }
+    
+    .blocReseau1-1
+    {
+        width: 10%;
+        height: 100%;
+        padding-top:8%;
+    }
+
+    .imageFB {
+        font-size :1.8rem;
+        color: white;
+        }
+        
+        .imageInstagram {
+          margin-top:2%;
+          font-size :1.8rem;
+          color: white;
+        }
+
+
+    .titreC1-1
+    {
+        font-size: 2rem;
+        color:white;
+    }
+    
+    .explorer
+    {
+        margin-left: 0px;
+    }
+
+    .reserver
+    {
+        margin-left: 0px;
+    }
+    
+      
+    
+    }
+
+
+    /*--------------------------
+                CONTAINER 2
+    -----------------------------*/
+
+    
+.container2 {
+    height: 100vh;
+}
+
+
+.container2-1 {
+    
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+.bloc2-1
+{
+    width: 100%;
+    height:30%;
+}
+
+.titreC2-1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top:5%;
+    margin-left:10%;
+}
+
+.descriptionC2-1
+{
+    font-size: 1.5rem;
+    margin-left:10%;
+}
+
+.bloc2-2
+{
+    width: 100%;
+    height:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.blocStandard1
+{
+    width:25%;
+    height:80%;
+    border-radius: 2%;
+    background-image: url("images/aventure.jpg");
+    background-size: cover;
+    padding:1%;
+}
+
+.blocStandard2
+{
+    width:25%;
+    height:80%;
+    border-radius: 2%;
+    background-image: url("images/foret.jpg");
+    background-size: cover;
+    padding:1%;
+}
+
+.blocStandard3
+{
+    width:25%;
+    height:80%;
+    border-radius: 2%;
+    background-image: url("images/foret.jpg");
+    background-size: cover;
+    padding:1%;
+}
+
+.BST{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top:8%;
+    margin-left:5%;
+}
+
+.BSD{
+    font-size: 1rem;
+    margin-top:8%;
+    margin-left:5%;
+
+}
+
+.boutonStandard
+{
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: var(--noir);
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    color: black;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+
+  .boutonStandard:hover
+{
+color: white;
+background-color: black;
+  }
+
+
+@media all and (max-width: 1000px) {
+
+
+.container2 {
+    height: 250vh;
+}
+
+.container2-1 
+{
+    height: 100%;    
+}
+
+.bloc2-1
+{
+    height:15%;
+}
+.titreC2-1
+{
+    font-size:1.5rem;
+    margin-left:5%;
+}
+
+.descriptionC2-1
+{
+    font-size:1rem;
+    margin-left:5%;
+}
+
+.bloc2-2
+{
+    margin-top: 5%;
+    width: 100%;
+    height:150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.blocStandard1, .blocStandard2,.blocStandard3
+{
+    margin-bottom: 5%;
+    height:120%;
+    width:90%;
+
+}
+
+
+
+  }
+
+
+
+/*-----------------------------------
+            CONTAINER 3
+----------------------------------*/
+
+
+.container3 {
+    height: 100vh;
+}
+
+
+.container3-1 {
+    
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+
+.bloc3-1
+{
+    width: 100%;
+    height:30%;
+}
+
+.titreC3-1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top:5%;
+    margin-left:10%;
+}
+
+.descriptionC3-1
+{
+    font-size: 1.5rem;
+    margin-left:10%;
+}
+
+.bloc3-2
+{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.blocImage3-1
+{
+    width: 45%;
+    height:80%;
+}
+
+.imageBS1
+{  
+    width: 100%;
+    height:100%;
+    background-image: url("images/chambre.jpg");
+    background-size: cover;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocArrow
+{
+    width: 100%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.arrow
+{
+    font-size:3rem;
+    color:white;
+}
+
+.blocInfoImg
+{
+    width:100%;
+    height:20%;
+
+}
+
+.infoImg
+{
+    margin-top:2%;
+    margin-left:5%;
+    width: 35%;
+    height:70%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+.imgTexte
+{
+    margin:auto;
+    font-size: 1.2rem;
+}
+
+.blocSwitch
+{
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.switch
+{
+    font-size: 5rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    color:white;
+}
+
+.blocInformation
+{
+    width: 20%;
+    height:80%;  
+}
+
+.titreInfo
+{
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size:1.7rem;
+
+}
+
+.blocInfoDesc
+{
+    width:100%;
+    height:45%;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-top:5%;
+    font-size:1rem;
+}
+
+.blocEtoile
+{
+    width:100%;
+    height:5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.etoileInfo
+{
+    width:25px;
+    height:25px;
+    margin-left:3%; 
+    background-image: url('/images/etoile.svg');
+    background-size: cover;
+}
+
+.blocButtonPrix
+{
+    width:100%;
+    height:10%;
+    display:flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    margin-top:3%;
+    margin-left:3%;
+}
+
+.boutonInfo
+{
+
+        width: 140px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: color 0.5s, background-color 0.5s;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Jost", sans-serif;
+
+      }
+      .boutonInfo:hover
+{
+        width: 140px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: color 0.5s, background-color 0.5s;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Jost", sans-serif;
+
+
+}
+
+.prixInfo
+{
+    font-size:2rem;
+    color:black;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------
+            RESPONSIVE CONTAINER 3 - 600px et 1000px
+---------------------------------------------------*/
+
+
+@media all and (max-width: 600px) {
+
+.container3 {
+    height: 100%;
+}
+
+
+.container3-1 {
+    
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+
+.bloc3-1
+{
+    width:100%;
+    height:45%;
+}
+
+.titreC3-1
+{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top:0%;
+    margin-left:10%;
+}
+
+.descriptionC3-1
+{
+    font-size: 1rem;
+    margin-left:10%;
+}
+
+
+
+.bloc3-2
+{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blocImage3-1
+{
+    width: 100%;
+    height:50vh;
+    margin-top:2%;
+}
+
+
+
+.imageBS1
+{  
+    width: 90%;
+    height:95%;
+    background-image: url("images/chambre.jpg");
+    background-size: cover;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+
+.blocArrow
+{
+    width: 100%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.arrow
+{
+    font-size:1.5rem;
+    color:white;
+}
+
+.blocInfoImg
+{
+    width:100%;
+    height:20%;
+}
+
+.infoImg
+{
+    margin-top:2%;
+    margin-left:5%;
+    width: 75%;
+    height:50%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.imgTexte
+{
+    margin:auto;
+    font-size: 1rem;
+}
+
+.blocSwitch
+{
+    width:100%;
+    height:20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.switch
+{
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    color:white;
+}
+
+.blocInformation
+{
+    width: 90%;
+    height:50%; 
+}
+
+.titreInfo
+{
+    margin-top: 15%;
+    margin-left: 2%;
+    font-size:1.7rem;
+    font-weight: bold;
+
+}
+
+.blocInfoDesc
+{
+    width:100%;
+    height:45%;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-top:5%;
+    font-size:1rem;
+}
+
+
+
+
+}
+
+/*
+BUG A REVOIR
+@media all and (max-width: 1000px) {
+
+
+    .container3 {
+        height: 100vh;
+    }
+    
+    .container3-1 
+    {
+        height: 100%;    
+    }
+    
+    .bloc3-1
+    {
+        width:100%;
+        height:25%;
+    }
+    .titreC3-1
+    {
+        font-size:1.5rem;
+        margin-left:0%;
+        padding-left: 5%;
+    }
+    
+    .descriptionC3-1
+    {
+        font-size:1rem;
+        margin-left:0%;
+        padding-left: 5%;
+    }
+    
+    .bloc3-2
+    {
+        width: 100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    
+
+.blocImage3-1
+{
+    width: 50%;
+    height:250%;
+}
+
+
+.imageBS1
+{  
+    width: 100%;
+    height:100%;
+    background-image: url("images/chambre.jpg");
+    background-size: cover;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.blocInfoImg
+{
+    width:100%;
+    height:20%;
+
+}
+
+.infoImg
+{
+    margin-top:2%;
+    margin-left:5%;
+    width: 55%;
+    height:50%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.blocInformation
+{
+    width: 100%;
+    height:100%;
+}
+
+.titreInfo
+{
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size:1.7rem;
+
+}
+
+.blocInfoDesc
+{
+    width:100%;
+    height:35%;
+    padding-left: 3%;
+    padding-right:3%;
+    padding-top:1%;
+    font-size:1rem;
+}
+
+.blocEtoile
+{
+    width:100%;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.etoileInfo
+{
+    width:25px;
+    height:25px;
+    margin-left:3%; 
+    background-image: url('/images/etoile.svg');
+    background-size: cover;
+}
+
+.blocButtonPrix
+{
+    width:100%;
+    height:20%;
+    margin-left:0%;
+    padding-left:3%;
+    display:flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+}
+
+    
+    
+}
+*/
+
+/*--------------------------------
+                CONTAINER 4 
+---------------------------------*/
+
+
+
+.container4 {
+    height: 100vh;
+}
+
+
+.container4-1 {
+    
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+
+    
+}
+
+.bloc4-1
+{
+    width: 100%;
+    height:30%;
+}
+
+.titreC4-1
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top:5%;
+    margin-left:10%;
+}
+
+.descriptionC4-1
+{
+    font-size: 1.5rem;
+    margin-left:10%;
+}
+
+.bloc4-2
+{
+    width: 100%;
+    height:100%;
+}
+
+.bloc4-3
+{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.bloc4-4
+{
+    width:20%;
+    height:90%;
+    background-color: white;
+}
+
+.bloc4-5
+{
+    width:100%;
+    height:15%;
+}
+
+.bloc4-5Titre
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top:5%;
+}
+
+.bloc4-6
+{
+    width:100%;
+    height:40%;
+    padding-top:25%;
+}
+
+.bloc4-6Image1
+{
+    width:120px;
+    height:120px;
+    font-size:2rem;
+    background-image: url('images/choices.svg');
+    background-size: cover;
+}
+.bloc4-6Image2
+{
+    width:120px;
+    height:120px;
+    font-size:2rem;
+    background-image: url('images/car.svg');
+    background-size: cover;
+}
+.bloc4-6Image3
+{
+    width:120px;
+    height:120px;
+    font-size:2rem;
+    background-image: url('images/badge.svg');
+    background-size: cover;
+}
+.bloc4-7
+{
+    width:100%;
+    height:50%;
+}
+
+.bloc4-7Desc
+{
+    font-size:1rem;
+    text-align: justify;
+}
+
+/* ----------------------------------------------------
+            RESPONSIVE CONTAINER 4 - 600px et 1000px
+---------------------------------------------------*/
+
+
+
+@media all and (max-width: 600px) 
+{
+
+    .container4 {
+        height: 250vh;
+    }
+    
+
+    .container4-1 {
+    
+        width:100%;
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+    
+        
+    }
+    
+    .bloc4-1
+    {
+        width: 100%;
+        height:8%;
+    }
+    
+    .titreC4-1
+    {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top:5%;
+        margin-left:10%;
+    }
+    
+    .descriptionC4-1
+    {
+        font-size: 1rem;
+        margin-left:10%;
+    }
+    
+    .bloc4-2
+    {
+        width: 100%;
+        height:100%;
+    }
+    
+    
+    .bloc4-3
+    {
+        width: 100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bloc4-4
+    {
+        width:100%;
+        height:60%;
+    }
+    
+    .bloc4-5
+    {
+        width:100%;
+        height:15%;
+    }
+    
+    .bloc4-5Titre
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top:5%;
+        text-align: center;
+    }
+    
+    .bloc4-6
+    {
+        width:100%;
+        height:40%;
+        padding-top:5%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .bloc4-7Desc
+    {
+        font-size:1rem;
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+
+}
+
+
+
+/*------------------------------
+            FOOTER
+---------------------------------*/
+
+footer
+{
+    width: 100%;
+    height:30vh;
+    
+}
+
+.blocFooter
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocHaut
+{
+    width:100%;
+    height:20%;
+    display: flex;
+    justify-content: center;
+}
+
+.logoFooter
+{
+    font-size: 2rem;
+    color: black;
+    padding-top:15px;
+}
+
+.blocMilieu
+{
+ 
+    width:100%;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+
+}
+
+.menuFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 40%;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+.liFooter
+{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+}
+
+.aFooter 
+{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+}
+
+
+
+.blocBas
+{
+ 
+    width:100%;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+
+
+}
+
+.logoInsta
+{
+    font-size:2.5rem;
+    margin-left: 2%;
+    margin-right:2%;
+}
+
+.logoFb
+{
+    
+    font-size:2.5rem;
+    margin-left: 2%;
+    margin-right:2%;
+}
+
+
+/* ----------------------------------------------------
+            RESPONSIVE FOOTER- 600px et 1000px
+---------------------------------------------------*/
+
+
+
+@media all and (max-width: 600px) 
+{
+
+    footer
+    {
+        width: 100%;
+        height:30vh;
+        
+    }
+    
+    .blocFooter
+    {
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .blocHaut
+    {
+        width:100%;
+        height:20%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logoFooter
+    {
+        font-size: 2rem;
+        color: black;
+        padding-top:15px;
+    }
+    
+    .blocMilieu
+    {
+     
+        width:100%;
+        height:30%;
+        display: flex;
+        justify-content: center;
+        margin-top:5px;
+    
+    }
+    
+    .menuFooter {
+
+        display: none;
+    }
+
+    
+    
+    
+    .blocBas
+    {
+     
+        width:100%;
+        height:30%;
+        display: flex;
+        justify-content: center;
+        margin-top:5px;
+    
+    
+    }
+    
+    .logoInsta
+    {
+        font-size:2.5rem;
+        margin-left: 2%;
+        margin-right:2%;
+    }
+    
+    .logoFb
+    {
+        
+        font-size:2.5rem;
+        margin-left: 2%;
+        margin-right:2%;
+    }
+
+}
