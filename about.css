@@ -1,0 +1,777 @@
+/* POLICES */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    padding: 0 2rem;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: row;
+}
+
+.titre {
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.imageMenu1 {
+
+    font-size: 1.5rem;
+
+}
+
+.imageMenu2 {
+    font-size: 1.5rem;
+
+}
+
+/*------------------------------------
+             RESPONSIVE 
+---------------------------------------*/
+
+
+@media all and (max-width: 1000px) {
+
+    header {
+        background: transparent;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+        font-size: 1.5rem;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .open .menu {
+        transform: translateX(0);
+    }
+}
+
+/* ---------------------------------------------
+----------------- CONTACT CONTAINER 6 --------------
+-----------------------------------------------*/
+
+.container6 {
+    height: 100vh;
+
+}
+
+
+.container6-1 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blocHaut {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocTitre {
+    width: 50%;
+    height: 30%;
+    margin-top: 5%;
+}
+
+.titre {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sstitre {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.blocMilieu {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocImageG {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.groupeImage {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.groupeImageHaut {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img1G {
+    width: 50%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+
+}
+
+.img1D {
+    width: 50%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+
+}
+
+.img1 {
+    background-image: url(/images/about/mont.jpg);
+    width: 90%;
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.img2 {
+    background-image: url(/images/about/colline.jpg);
+    width: 90%;
+    height: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.img3 {
+    background-image: url(/images/about/eglise.jpg);
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.groupeImageBas {
+    width: 100%;
+    height: 35%;
+
+}
+
+.img1B {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.img4 {
+    background-image: url(/images/about/san_francisco.jpg);
+    width: 90%;
+    height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+}
+
+
+.blocTexteD {
+
+    width: 50%;
+    height: 100%;
+}
+
+.blocTxt {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocTxtHaut {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.titre1 {
+    font-size: 1.6rem;
+}
+
+.description1 {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+
+.titre2 {
+    font-size: 1.6rem;
+    margin-top: 10%;
+}
+
+
+.description2 {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+.titre3 {
+    font-size: 1.6rem;
+    margin-top: 10%;
+}
+
+
+.description3 {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+
+
+.blocTxtBas {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 5%;
+}
+
+/*------------------------------------------------------------------
+            RESPONSIVE  CONTAINER 6 ---- 1000px
+--------------------------------------------------------------------*/
+
+
+@media all and (max-width: 1050px) {
+
+
+    .container6 {
+        height: 300vh;
+
+    }
+
+
+    .container6-1 {
+
+        width: 100%;
+        height: 115%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .blocHaut {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blocMilieu {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .blocImageG {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blocTexteD {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blocTxt {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocTxtHaut {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        ;
+    }
+
+    .blocTxtBas {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 0%;
+    }
+
+}
+
+
+/*------------------------------------------------------------------
+            RESPONSIVE  CONTAINER 6 ---- 600px
+--------------------------------------------------------------------*/
+
+
+@media all and (max-width: 600px) {
+
+
+    .blocHaut {
+        width: 100%;
+        height: 8%;
+
+    }
+
+    .blocTitre {
+        width: 80%;
+        height: 50%;
+        margin-top: 7%;
+    }
+
+    .titre {
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .sstitre {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+/* ---------------------------------------------
+----------------- CONTACT CONTAINER 7 --------------
+-----------------------------------------------*/
+
+.container7 {
+    height: 100vh;
+
+}
+
+
+.container7-1 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.blocBas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+
+}
+
+.blocBas1 {
+    width: 45%;
+    height: 60%;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+.titre4 {
+    font-size: 1.6rem;
+}
+
+
+.description4 {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+.blocBas2 {
+    width: 90%;
+    height: 100%;
+}
+
+.blocTitre5 {
+    width: 90%;
+    height: 10%;
+    padding-left: 3%;
+}
+
+.titre5 {
+    font-size: 1.6rem;
+}
+
+.blocImageBas {
+
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+.imageGauche {
+    background-image: url(/images/about/lac.jpg);
+    width: 50%;
+    height: 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.blocBlancHaut {
+    width: 100%;
+    height: 50%;
+
+}
+
+.carreBlanc {
+    width: 60%;
+    height: 40%;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.texteCarreBlanc {
+    font-size: 1.5rem;
+    margin: auto;
+    font-weight: bold;
+}
+
+.blocBlancBas {
+    width: 100%;
+    height: 50%;
+}
+
+.blocBouton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    padding-top: 7%;
+
+}
+
+
+
+.imageDroite {
+    width: 40%;
+    height: 85%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+.titre6 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.description6 {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/*--------- BOUTONS -------------*/
+
+
+.Explorer {
+    background-color: White;
+    color: black;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    margin-left: 5%;
+}
+
+.Explorer:hover {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+}
+
+
+
+/*------------------------------------------------------------------
+            RESPONSIVE  CONTAINER 7 ---- 600px et 1000px
+--------------------------------------------------------------------*/
+
+
+@media all and (max-width: 1050px) {
+
+
+    .container7 {
+        height: 125vh;
+
+    }
+
+
+    .container7-1 {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .blocBas {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+
+    }
+
+    .blocBas1 {
+        width: 100%;
+        height: 30%;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+
+
+    .blocBas2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocTitre5 {
+        width: 90%;
+        height: 10%;
+        padding-left: 3%;
+    }
+
+    .titre5 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .blocImageBas {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+    }
+
+    .imageGauche {
+        width: 90%;
+        height: 85%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+    .imageDroite {
+        width: 90%;
+        height: 85%;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+
+    .titre6 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-top: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
+        text-align: center;
+    }
+
+    .description6 {
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 5%;
+    }
+
+}

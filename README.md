@@ -6,3 +6,9 @@ Site de Voyage pour entreprise CocoBino
 
 ->Partie HomePage Site & Responsive terminé
 ->Partie contact en cours de développement.
+
+
+06.04.2022
+-> Contact / About / inscription / pack terminé
+-> Module inscription.php en développement.
+-> Passage des .HTML en .PHP
