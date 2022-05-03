@@ -12,3 +12,5 @@ Site de Voyage pour entreprise CocoBino
 -> Contact / About / inscription / pack terminé
 -> Module inscription.php en développement.
 -> Passage des .HTML en .PHP
+
+----> Projet en cours
